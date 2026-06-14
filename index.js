@@ -16,9 +16,6 @@ const unknownEndpoint = (request, response) => {
   response.status(404).send({ error: 'unknown endpoint' })
 }
 
-
-
-
 let persons=[
     { 
       "id": "1",
@@ -45,7 +42,7 @@ let persons=[
 
 
 //APP.GETS
-app.get('/persons',(request,resposne)=>{
+app.get('/',(request,resposne)=>{
     resposne.json(persons)
 })
 app.get('/persons/:id',(request,response)=>{
