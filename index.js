@@ -42,7 +42,7 @@ let persons=[
 
 
 //APP.GETS
-app.get('/',(request,resposne)=>{
+app.get('/persons',(request,resposne)=>{
     resposne.json(persons)
 })
 app.get('/persons/:id',(request,response)=>{
